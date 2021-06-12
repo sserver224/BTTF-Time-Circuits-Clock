@@ -1,6 +1,7 @@
 from tkinter import *
 from datetime import datetime
 from tk_tools import *
+from time import sleep as wait
 root=Tk()
 root.config(bg='black')
 root.title('Time Circuits')
@@ -66,5 +67,6 @@ while True:
         Disp7.set_value(d.strftime('%H'))
         Disp8.set_value(d.strftime('%M'))
         root.update()
+        wait(0.01)
     except:
         break
